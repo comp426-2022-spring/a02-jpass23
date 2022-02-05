@@ -81,12 +81,12 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-  const bruh = {
+  const object = {
     call: call,
     flip: coinFlip(),
     result: '',
   }
-  (bruh.flip == bruh.call) ? bruh.result = 'win' : bruh.result = 'lose';
+  (object.flip == object.call) ? object.result = 'win' : object.result = 'lose';
   return object;
 }
 
