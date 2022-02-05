@@ -1,3 +1,5 @@
-var minimist = require('minimist');
+import minimist from 'minimist';
 const args = minimist(process.argv.slice(2));
-console.log(args['name']);
+var x = coinFlips(args['number']);
+console.log(x);
+console.log(countFlips(x));
