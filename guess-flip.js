@@ -3,11 +3,12 @@ import { flipACoin } from "./modules/coin.mjs";
 
 const args = minimist(process.argv.slice(2));
 
-// if (args['call'] == null){
-//     console.log("Error: no input.")
-// }else if (args['call']=='heads' || args['call']=='tails'){
-//     console.log(flipACoin(args['call']))
-// }else{
-//     console.log("Error: No input.\nUsage: node guess-flip --call=[heads|tails]")
-// }
-console.log((args['call']=='heads') || (args['call']=='tails') ? flipACoin(args['call']) : "Error: No input.\nUsage: node guess-flip --call=[heads|tails]");
+if (args['call'] == null){
+    console.log("Error: No input.")
+    console.log("Usage: node guess-flip --call=[heads|tails]")
+}else if (args['call']=='heads' || args['call']=='tails'){
+    console.log(flipACoin(args['call']))
+}else{
+    console.log("Usage: node guess-flip --call=[heads|tails]")
+}
+//console.log((args['call']=='heads') || (args['call']=='tails') ? flipACoin(args['call']) : "Error: No input.\nUsage: node guess-flip --call=[heads|tails]");

@@ -66,7 +66,13 @@ function countFlips(array) {
   array.forEach(element => {
     (element=='heads') ? counter.heads += 1 : counter.tails += 1;
   });
-  return counter;
+  if(counter.heads == 0){
+    return {tails: counter.tails};
+  }
+  if(counter.tails == 0){
+    return {heads: counter.heads};
+  }
+  return counter
 }
 
 /** Flip a coin!
