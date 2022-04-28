@@ -5,3 +5,4 @@ var y = coinFlips((isFinite(args['number']))?args['number']:1);
 //console.log(args['number']);
 console.log(y);
 console.log(countFlips(y));
+//
