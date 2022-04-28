@@ -11,4 +11,3 @@ if (args['call'] == null){
 }else{
     console.log("Usage: node guess-flip --call=[heads|tails]")
 }
-//console.log((args['call']=='heads') || (args['call']=='tails') ? flipACoin(args['call']) : "Error: No input.\nUsage: node guess-flip --call=[heads|tails]");
