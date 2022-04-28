@@ -98,7 +98,6 @@ function flipACoin(call) {
   return object;
 }
 
-
 /** Export 
  * 
  * Export all of your named functions
